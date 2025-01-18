@@ -1,30 +1,27 @@
 <template>
   <div
-    class="relative w-full flex items-center justify-center bg-cover bg-center"
-    :style="{ backgroundImage: 'url(/bird.jpg)' }"
+    class="relative w-full flex items-center justify-center bg-cover bg-center py-20"
+    :style="{ backgroundImage: 'url(/kitchen.jpg)' }"
   >
     <!-- Solid overlay to dim the background -->
-    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
 
     <!-- Content -->
     <div class="relative z-10 text-center text-white py-8 md:py-20 px-4">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg mt-40">
-        Simurgh: Coming Soon
+      <h1 class="text-5xl md:text-5xl font-bold mb-2 drop-shadow-lg px-48">
+        San Antonio Custom Interiors
+      </h1>
+      <h1 class="text-4xl md:text-4xl font-bold mb-12 drop-shadow-lg px-48">
+        Kitchen, Bath, Cabinets, and More
       </h1>
       <p
-        class="text-lg md:text-2xl max-w-2xl mx-auto font-medium text-slate-300"
+        class="text-md md:text-xl max-w-2xl mx-auto font-medium text-slate-200 drop-shadow-lg"
       >
-        In a game where myth, history and reality intertwine, step into the role
-        of a fearless woman battling a corrupt status quo for her right to live
-        freely. Embark on an epic fight for freedom that will shape the destiny
-        of a nation!
+        Styles by Design is your one stop shop for all your custom interior
+        needs. We offer full kitchen &amp; bath remodels, custom cabinets,
+        flooring, and stone, 3d rendering, interior painting and more. Contact
+        us today for a free consultation!
       </p>
-      <NuxtLink
-        to="/apps/simurgh"
-        class="hero-button-main gradient-button-yellow"
-      >
-        Learn More</NuxtLink
-      >
     </div>
   </div>
 </template>

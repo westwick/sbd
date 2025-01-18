@@ -1,3 +1,58 @@
+<template>
+  <header class="px-2 md:px-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <NuxtLink
+        to="/"
+        class="text-blue-900 text-lg md:text-xl font-bold flex items-center hover:text-blue-600"
+        exact-active-class="text-blue-800"
+      >
+        <img src="@/assets/images/logosbd.jpg" class="logo mr-4" />
+      </NuxtLink>
+      <div class="flex items-center space-x-4 ml-auto">
+        <!-- <NuxtLink
+          to="/"
+          class="ml-4 navlink text-blue-900 text-md font-bold hover:text-blue-600"
+          exact-active-class="link-active text-blue-800"
+        >
+          HOME
+        </NuxtLink> -->
+        <!-- <div class="text-slate-300">/</div> -->
+        <NuxtLink
+          to="/apps"
+          class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
+          :class="{ 'link-active text-cyan-700': isAppsActive }"
+        >
+          SERVICES
+        </NuxtLink>
+        <div class="text-slate-200">/</div>
+        <NuxtLink
+          to="/apps"
+          class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
+          :class="{ 'link-active text-cyan-700': isAppsActive }"
+        >
+          ABOUT
+        </NuxtLink>
+        <div class="text-slate-200">/</div>
+        <NuxtLink
+          to="/apps"
+          class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
+          :class="{ 'link-active text-cyan-700': isAppsActive }"
+        >
+          GALLERY
+        </NuxtLink>
+        <div class="text-slate-200">/</div>
+        <NuxtLink
+          to="/contact"
+          class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
+          exact-active-class="link-active text-cyan-700"
+        >
+          CONTACT
+        </NuxtLink>
+      </div>
+    </div>
+  </header>
+</template>
+
 <script setup>
 import { useRoute } from "vue-router";
 import { computed } from "vue";
@@ -9,51 +64,9 @@ const isAppsActive = computed(() => {
 });
 </script>
 
-<template>
-  <header class="px-2 md:px-4">
-    <div class="container mx-auto flex items-center justify-between">
-      <NuxtLink
-        to="/"
-        class="text-white text-lg md:text-xl font-bold flex items-center hover:text-yellow-200"
-        exact-active-class="text-yellow-300"
-      >
-        <img src="@/assets/images/logo.png" class="logo mr-4" /><span
-          class="hidden md:block"
-          >Sugar Cube Studio</span
-        >
-      </NuxtLink>
-      <div class="flex items-center space-x-4 ml-auto">
-        <NuxtLink
-          to="/"
-          class="ml-4 navlink text-white text-md font-bold hover:text-yellow-200"
-          exact-active-class="link-active text-yellow-300"
-        >
-          HOME
-        </NuxtLink>
-        <div class="text-slate-700">/</div>
-        <NuxtLink
-          to="/apps"
-          class="navlink text-white text-md font-bold hover:text-yellow-200"
-          :class="{ 'link-active text-yellow-300': isAppsActive }"
-        >
-          APPS
-        </NuxtLink>
-        <div class="text-slate-700">/</div>
-        <NuxtLink
-          to="/contact"
-          class="navlink text-white text-md font-bold hover:text-yellow-200"
-          exact-active-class="link-active text-yellow-300"
-        >
-          CONTACT
-        </NuxtLink>
-      </div>
-    </div>
-  </header>
-</template>
-
 <style>
 header {
-  background: #171926;
+  background: #fff;
   position: relative;
 }
 
@@ -65,20 +78,17 @@ header a {
   border-bottom: 3px solid transparent;
   border-top: 3px solid transparent;
   padding: 16px 8px;
+  font-size: 20px;
 }
 
 .logo {
-  width: 40px;
+  width: 400px;
   height: auto;
-  transform: rotate(0);
-  transition: all 0.3s ease-in-out;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.logo:hover {
-  transform: rotate(180deg);
-}
-
-.link-active {
+/* .link-active {
   border-bottom: 3px solid #67a1d6;
   position: relative;
 }
@@ -93,5 +103,5 @@ header a {
   border-right: 6px solid transparent;
   border-top: 6px solid #67a1d6;
   z-index: 2;
-}
+} */
 </style>

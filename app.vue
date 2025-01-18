@@ -16,16 +16,14 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk
-      ? `${titleChunk} - Sugar Cube Studio`
-      : "Sugar Cube Studio";
+    return titleChunk ? `${titleChunk} - Styles by Design` : "Styles by Design";
   },
 });
 </script>
 
 <style>
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #171926;
   color: #fff;
 }

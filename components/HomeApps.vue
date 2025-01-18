@@ -5,11 +5,11 @@
         <div
           class="w-full md:w-1/2 md:order-1 order-2 relative h-64 md:h-96 mt-8 md:mt-0"
         >
-          <img
+          <!-- <img
             :src="appMockupImage"
             alt="App Mockup"
             class="absolute w-full max-w-md mx-auto left-0 right-0 object-contain app-mockup"
-          />
+          /> -->
         </div>
         <div
           class="w-full px-8 pb-32 md:pb-0 md:px-0 md:w-1/2 md:pl-8 order-1 md:order-2"
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import appMockupImage from "~/assets/images/nowruz-mockup.png";
+// import appMockupImage from "~/assets/images/nowruz-mockup.png";
 // made with mockuphone.com
 </script>
 
