@@ -90,7 +90,7 @@ const closeMenu = () => {
 };
 
 const isAppsActive = computed(() => {
-  return route.path.startsWith("/apps");
+  return route.path.startsWith("/services");
 });
 </script>
 

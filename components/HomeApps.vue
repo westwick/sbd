@@ -20,7 +20,7 @@
             remodeling, custom cabinetry, and more.
           </p>
           <NuxtLink
-            to="/apps"
+            to="/services"
             class="gradient-button text-white font-bold py-2 px-4 rounded inline-block"
           >
             Explore Our Services
