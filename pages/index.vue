@@ -1,17 +1,8 @@
 <template>
   <AppHero />
   <div class="bg-white">
-    <section class="angled-section py-4 md:py-8">
-      <div class="container mx-auto text-center">
-        <p
-          class="text-lg md:text-xl max-w-64 md:max-w-lg px-8 mx-auto text-slate-400 italic"
-        >
-          Innovations driven by imagination.
-        </p>
-      </div>
-    </section>
     <section>
-      <HomeNewsletter />
+      <HomeServices />
     </section>
     <section
       class="bg-gradient-to-t from-[rgb(215,223,232)] to-[rgb(244,246,248)]"
@@ -20,6 +11,9 @@
     </section>
     <section>
       <HomeNews />
+    </section>
+    <section>
+      <AppDiscounts />
     </section>
   </div>
 </template>

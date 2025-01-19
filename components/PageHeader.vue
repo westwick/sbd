@@ -24,7 +24,8 @@ export default {
 
 <style>
 .page-header {
-  background: url("~/assets/images/page-header-bg.jpg") no-repeat center;
+  /* background: url("~/assets/images/page-header-bg.jpg") no-repeat center; */
+  background: #333;
   background-size: cover;
 }
 </style>

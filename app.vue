@@ -24,13 +24,13 @@ useHead({
 <style>
 body {
   font-family: "Poppins", sans-serif;
-  background: #171926;
-  color: #fff;
+  background: #fff;
+  color: #111;
 }
 
 .main {
   /* padding: 16px; */
-  background: #0c0f1b;
+  /* background: #0c0f1b; */
   /* min-height: 100vh; */
 }
 .gradient-button {

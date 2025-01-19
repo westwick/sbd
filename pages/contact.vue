@@ -1,21 +1,24 @@
 <template>
-  <PageHeader subtitle="Contact Us" title="We'd love to hear from you" />
+  <PageHeader
+    subtitle="Contact Us"
+    title="We'd love to work with you on your next project"
+  />
   <div class="container mx-auto py-16 px-4 relative">
     <div class="absolute inset-0 z-0">
-      <img
+      <!-- <img
         src="@/assets/images/blur-transparent.png"
         alt="Background"
         class="w-full h-full object-cover"
-      />
+      /> -->
     </div>
     <div>
-      <p class="text-lg text-center mb-8 text-white">
-        Fill out the form below and we'll get back to you soon.
+      <p class="text-lg text-center mb-8">
+        Fill out the form below and we'll get back to you as soon as possible.
       </p>
     </div>
     <div class="relative z-10">
       <div
-        class="max-w-2xl mx-auto bg-gray-900 bg-opacity-80 p-8 rounded-lg shadow-lg border border-gray-700"
+        class="max-w-2xl mx-auto bg-gray-900 bg-opacity-10 p-8 rounded-lg shadow-lg border border-gray-400"
       >
         <form
           @submit.prevent="handleSubmit"
@@ -27,7 +30,7 @@
           <div>
             <label
               for="name"
-              class="block text-sm font-medium text-gray-300 mb-1"
+              class="block text-sm font-medium text-gray-800 mb-1"
               >Name</label
             >
             <input
@@ -36,13 +39,13 @@
               name="name"
               v-model="name"
               required
-              class="w-full px-4 py-2 rounded border border-gray-600 bg-gray-800 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+              class="w-full px-4 py-2 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
             />
           </div>
           <div>
             <label
               for="email"
-              class="block text-sm font-medium text-gray-300 mb-1"
+              class="block text-sm font-medium text-gray-800 mb-1"
               >Email</label
             >
             <input
@@ -51,13 +54,13 @@
               v-model="email"
               name="email"
               required
-              class="w-full px-4 py-2 rounded border border-gray-600 bg-gray-800 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+              class="w-full px-4 py-2 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
             />
           </div>
           <div>
             <label
               for="message"
-              class="block text-sm font-medium text-gray-300 mb-1"
+              class="block text-sm font-medium text-gray-800 mb-1"
               >Message</label
             >
             <textarea
@@ -66,7 +69,7 @@
               rows="6"
               name="message"
               required
-              class="w-full px-4 py-2 rounded border border-gray-600 bg-gray-800 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+              class="w-full px-4 py-2 rounded border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
             ></textarea>
           </div>
           <div>

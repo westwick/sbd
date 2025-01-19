@@ -1,16 +1,15 @@
 <template>
   <div class="py-16 px-4 container mx-auto text-center">
-    <h2 class="text-black font-bold text-2xl mb-8">Latest News and Updates</h2>
+    <h2 class="text-black font-bold text-4xl mb-8">Other Services</h2>
 
     <div class="news-grid">
       <!-- News Card 1 -->
       <div class="news-card">
         <div class="news-image-placeholder"></div>
         <div class="news-content">
-          <h3 class="news-headline">News Headline 1</h3>
+          <h3 class="news-headline">Custom Cabinets</h3>
           <p class="news-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We are certified distributor and installer for Northville Cabinetry.
           </p>
         </div>
       </div>
@@ -19,7 +18,7 @@
       <div class="news-card">
         <div class="news-image-placeholder"></div>
         <div class="news-content">
-          <h3 class="news-headline">News Headline 2</h3>
+          <h3 class="news-headline">Interior Painting</h3>
           <p class="news-text">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
@@ -31,7 +30,7 @@
       <div class="news-card">
         <div class="news-image-placeholder"></div>
         <div class="news-content">
-          <h3 class="news-headline">News Headline 3</h3>
+          <h3 class="news-headline">Custome Stonework</h3>
           <p class="news-text">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur.
