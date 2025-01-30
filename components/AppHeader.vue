@@ -49,22 +49,22 @@
         <div
           class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-4 md:mt-0 pb-4 md:pb-0"
         >
-          <NuxtLink
-            v-for="(link, index) in navLinks"
-            :key="index"
-            :to="link.to"
-            class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
-            exact-active-class="link-active text-cyan-500"
-            @click="closeMenu"
-          >
-            {{ link.text }}
-          </NuxtLink>
-          <div
-            v-if="index < navLinks.length - 1"
-            class="text-slate-200 hidden md:block"
-          >
-            /
-          </div>
+          <template v-for="(link, index) in navLinks" :key="index">
+            <NuxtLink
+              :to="link.to"
+              class="navlink text-cyan-700 text-md font-bold hover:text-cyan-600"
+              exact-active-class="link-active text-cyan-500"
+              @click="closeMenu"
+            >
+              {{ link.text }}
+            </NuxtLink>
+            <div
+              v-if="index < navLinks.length - 1"
+              class="text-slate-200 hidden md:block"
+            >
+              /
+            </div>
+          </template>
         </div>
       </div>
     </div>
