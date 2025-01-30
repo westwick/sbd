@@ -4,10 +4,13 @@
     <section>
       <HomeServices />
     </section>
+    <section>
+      <HomeApps />
+    </section>
     <section
       class="bg-gradient-to-t from-[rgb(215,223,232)] to-[rgb(244,246,248)]"
     >
-      <HomeApps />
+      <HomeReviewsAlt />
     </section>
     <section>
       <HomeNews />
@@ -27,10 +30,11 @@ useHead({
     },
 
     // Open Graph tags
-    { property: "og:title", content: "Sugar Cube Studio" },
+    { property: "og:title", content: "Styles by Design" },
     {
       property: "og:description",
-      content: "This is a custom page description for SEO and link previews.",
+      content:
+        "Custom Interiors in San Antonio, TX. Kitchen and Bath Remodeling, Custom Cabinetry, and More.",
     },
     { property: "og:image", content: "https://example.com/og-image.jpg" }, // Replace with your image URL
     { property: "og:url", content: "https://sugarcubestudio.netlify.app/" },

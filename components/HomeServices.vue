@@ -14,11 +14,12 @@
         <p class="text-gray-600">
           Transform your space with our expert interior design services.
         </p>
+        <p class="text-blue-500">Learn More</p>
       </div>
 
       <!-- Service 2 -->
       <div
-        class="flex flex-col items-center text-center bg-white p-2 rounded-lg shadow-lg"
+        class="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg"
       >
         <img
           src="https://placehold.co/300x200"
