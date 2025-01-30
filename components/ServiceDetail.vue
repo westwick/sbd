@@ -1,9 +1,9 @@
 <template>
+  <PageHeader :subtitle="subtitle" :title="title" />
   <div class="container mx-auto px-4 py-16">
     <!-- Hero Section -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
       <div class="space-y-6">
-        <h1 class="text-4xl font-bold text-gray-900">{{ title }}</h1>
         <p class="text-xl text-gray-700">{{ description }}</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2">
           <li v-for="feature in mainFeatures" :key="feature">{{ feature }}</li>
@@ -88,6 +88,10 @@
 
 <script setup>
 defineProps({
+  subtitle: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,

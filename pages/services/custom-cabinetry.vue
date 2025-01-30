@@ -1,5 +1,6 @@
 <template>
   <ServiceDetail
+    subtitle="Services"
     :title="serviceData.title"
     :description="serviceData.description"
     :mainFeatures="serviceData.mainFeatures"
