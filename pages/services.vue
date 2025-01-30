@@ -106,26 +106,30 @@
       </div>
     </div>
 
-    <!-- Additional Services -->
-    <div class="mt-32">
-      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
-        Additional Services
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          v-for="service in additionalServices"
-          :key="service.title"
-          class="bg-white p-6 rounded-lg shadow-lg"
-        >
-          <h3 class="text-xl font-bold text-gray-900 mb-4">
-            {{ service.title }}
-          </h3>
-          <p class="text-gray-700 mb-4">{{ service.description }}</p>
-          <ul class="list-disc list-inside text-gray-700 space-y-2">
-            <li v-for="feature in service.features" :key="feature">
-              {{ feature }}
-            </li>
-          </ul>
+    <!-- Additional Services with gradient background -->
+    <div
+      class="mt-32 -mx-4 px-4 py-24 bg-gradient-to-t from-[rgb(215,223,232)] to-[rgb(244,246,248)]"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Additional Services
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="service in additionalServices"
+            :key="service.title"
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-xl font-bold text-gray-900 mb-4">
+              {{ service.title }}
+            </h3>
+            <p class="text-gray-700 mb-4">{{ service.description }}</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li v-for="feature in service.features" :key="feature">
+                {{ feature }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
